@@ -1,6 +1,7 @@
 .description{
     display: grid;
 }
+
 .weather {
     color: #fff;
     display: flex;
