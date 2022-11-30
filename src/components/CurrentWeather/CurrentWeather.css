@@ -2,6 +2,7 @@
     display: grid;
 }
 .weather {
+    color: #fff;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -46,8 +47,7 @@
     font-weight: 600;
     font-size: 70px;
     width: auto;
-    letter-spacing: -5px;
-    margin: 10px 0;
+    margin: 10px 10px;
   }
   
   .details {
