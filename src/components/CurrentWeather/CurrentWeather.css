@@ -13,7 +13,7 @@
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.2);
 
-    
+
 }
 
 .left,
@@ -24,20 +24,20 @@
 }
 
 @media screen and (max-width: 500px) {
-    .weather{
+    .weather {
         flex-direction: column;
         justify-content: center;
     }
 
-    .left{
+    .left {
         justify-content: center;
     }
 
-    .right{
+    .right {
         margin-right: 40px;
         justify-content: center;
     }
-  }
+}
 
 .city {
     font-weight: 600;
@@ -94,8 +94,4 @@
     text-align: right;
     font-weight: 600;
     font-size: 12px;
-}
-
-.parameter-label.top {
-    border-bottom: 1px solid #fff;
 }

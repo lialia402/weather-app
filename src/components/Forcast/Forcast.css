@@ -38,25 +38,25 @@
     color: #757575;
 }
 
-.daily-details-grid {
+.daily-details {
+    display: grid;
     grid-row-gap: 0;
     grid-column-gap: 15px;
     -webkit-column-gap: 15px;
     column-gap: 15px;
-    display: grid;
     flex: 1 1;
     grid-template-columns: auto auto;
     padding: 5px 15px;
     row-gap: 0;
 }
 
-.daily-details-grid-item {
-    align-items: center;
+.daily-details-item {
     display: flex;
-    height: 30px;
     justify-content: space-between;
+    align-items: center;
+    height: 30px;
 }
 
-.daily-details-grid-item label {
+.daily-details-item label {
     color: #fff;
 }
