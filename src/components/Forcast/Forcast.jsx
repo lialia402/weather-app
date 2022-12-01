@@ -9,14 +9,14 @@ import {
 
 import React from 'react'
 
-const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const Forcast = ({ data }) => {
-    const dayInAWeek = new Date().getDay();
-    const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek));
+    const todayDay = new Date().getDay();
+    const forecastDays = DAYS.slice(todayDay, DAYS.length).concat(DAYS.slice(0, todayDay));
     return (
         <>
-            <label className="title">Daily</label>
+            <label className="title">Daily forecast:</label>
             <Accordion allowZeroExpanded>
                 {data.list.splice(0, 5).map((item, idx) => (
                     <AccordionItem key={idx}>
