@@ -21,7 +21,7 @@ function App() {
       `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
     );
 
-    Promise.all([currentWeatherFetch,forecastFetch])
+    Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
         const forcastResponse = await response[1].json();
@@ -35,11 +35,11 @@ function App() {
 
   return (
     <div className="app">
-    <div className="container">
-      <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forcast data={forecast} />}
-    </div>
+      <div className="container">
+        <Search onSearchChange={handleOnSearchChange} />
+        {currentWeather && <CurrentWeather data={currentWeather} />}
+        {forecast && <Forcast data={forecast} />}
+      </div>
     </div>
   );
 }
