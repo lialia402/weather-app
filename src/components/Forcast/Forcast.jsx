@@ -16,7 +16,7 @@ const Forcast = ({ data }) => {
     const forecastDays = DAYS.slice(todayDay, DAYS.length).concat(DAYS.slice(0, todayDay));
     return (
         <>
-            <label className="title">Daily forecast:</label>
+            <label className="title">Weekly forecast:</label>
             <Accordion allowZeroExpanded>
                 {data.list.splice(0, 7).map((item, idx) => (
                     <AccordionItem key={idx}>
